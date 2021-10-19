@@ -23,10 +23,8 @@ public class NumberOfEachCharacter {
         }
     }
     TreeMap<Character,Integer> sortedTreeMap = new TreeMap<>(listLetter);
-       // System.out.println(sorted);
         Set<Map.Entry<Character, Integer>> entries = sortedTreeMap.entrySet();
         int index = 1;
-        //using for loop
         for(Map.Entry<Character, Integer> entry : entries){
             System.out.println((index++)+". "+entry.getKey() + "-" + entry.getValue() );
         }    }
