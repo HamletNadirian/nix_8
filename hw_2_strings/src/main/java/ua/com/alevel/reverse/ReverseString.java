@@ -71,7 +71,7 @@ public class ReverseString {
         src = String.valueOf(str_to_char);
         }
         catch(StringIndexOutOfBoundsException e) {
-            System.out.println("Не верно заданы параметры индекса");
+            System.out.println("Не верно заданы параметры индекса!!!!!");
         }
         System.out.println(src);
         return src;

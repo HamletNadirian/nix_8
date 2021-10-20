@@ -39,6 +39,7 @@ public class ProgramRun {
                     System.out.println("Select correct choice");
                     break;
                 }
+                preview();
             }
         } catch (IOException e) {
             e.printStackTrace();
