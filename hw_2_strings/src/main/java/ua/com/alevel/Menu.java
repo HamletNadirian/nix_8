@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Menu {
+
     private static void preview() {
         System.out.println();
         System.out.println("Для того,чтобы использовать обычный реверс (по словам) введите - 1");
@@ -13,6 +14,7 @@ public class Menu {
         System.out.println("Для выхода нажимите - 0");
         System.out.println();
     }
+
   public static void run() {
       String choice;
       String src;
