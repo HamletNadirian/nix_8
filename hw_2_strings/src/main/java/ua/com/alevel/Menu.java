@@ -5,7 +5,8 @@ import java.io.InputStreamReader;
 
 public class Menu {
 
-    private static void preview() {
+    private static void preview()
+    {
         System.out.println();
         System.out.println("Для того,чтобы использовать обычный реверс (по словам) введите - 1");
         System.out.println("Для того,что бы использовать обычный реверс (реверс всей строки) введите - 2");
