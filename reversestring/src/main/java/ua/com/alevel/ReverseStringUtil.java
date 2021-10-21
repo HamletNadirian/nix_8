@@ -5,7 +5,7 @@ public final class ReverseStringUtil {
     }
 
     public static String reverse(String src, Boolean isWord) {
-        if (src != null && !src.isEmpty()) {
+        if (src != null ) {
 
             String strReverse = "";
             String[] words = src.split(" ");
