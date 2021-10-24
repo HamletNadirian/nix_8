@@ -1,7 +1,0 @@
-ua\com\alevel\entity\Book.class
-ua\com\alevel\StartOopMain.class
-ua\com\alevel\dao\BookDao.class
-ua\com\alevel\service\BookService.class
-ua\com\alevel\db\BookDB.class
-ua\com\alevel\array_list\ArrayListMy.class
-ua\com\alevel\view\BookController.class
