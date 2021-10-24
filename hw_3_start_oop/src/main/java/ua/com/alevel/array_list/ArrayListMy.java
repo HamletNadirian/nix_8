@@ -1,7 +1,5 @@
 package ua.com.alevel.array_list;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ArrayListMy <T> {
 
@@ -26,7 +24,8 @@ public class ArrayListMy <T> {
     public void remove(int i){
         if (i<0){
             System.out.println("index cannot be less 0");
-            return;}
+            return;
+        }
         else {
             System.arraycopy(elements, i + 1, elements, i, index - i);
             this.size--;
@@ -45,8 +44,9 @@ public class ArrayListMy <T> {
 
     }
     private void grow(){
-        int newSize = (this.elements.length)+(this.elements.length/2); //elements.length>>2==elements.length/2
-        elements = Arrays.copyOf(elements,newSize);
+        int newSize = (this.elements.length)+(this.elements.length/2);
+        System.arraycopy(elements, 0, elements, 0, Math.min(elements.length, newSize));
+        //elements = Arrays.copyOf(elements,newSize);
     }
     public T get(int index){
         if (index>=size||index<0){
@@ -54,24 +54,5 @@ public class ArrayListMy <T> {
         }
         return (T) elements[index];
     }
-/*    public static void main(String[] args){
-    ArrayListMy<Integer> integerArrayListMy = new ArrayListMy<>();
-    ArrayList<Integer> integerArray = new ArrayList<>();
-    integerArray.add(1);
-    integerArray.add(12);
-    integerArray.add(1);
-    integerArray.get(1);
-    integerArray.remove("12");
-    integerArrayListMy.add(1);
-    integerArrayListMy.add(2);
-    integerArrayListMy.add(222);
-    integerArrayListMy.add(3);
-   integerArrayListMy.remove("222");
-        integerArrayListMy.add(3);
-    integerArrayListMy.add(3);
-    integerArrayListMy.add(4);
-        System.out.println();
-        String str = "2";
 
-    }*/
 }
