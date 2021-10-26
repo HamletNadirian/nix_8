@@ -5,7 +5,7 @@ public final class ReverseStringUtil {
     }
 
     public static String reverse(String src, Boolean isWord) {
-         if (src != null ) {
+        if (src != null) {
             String strReverse = "";
             String[] words = src.split(" ");
             if (isWord) {
@@ -42,17 +42,17 @@ public final class ReverseStringUtil {
     }
 
     public static String reverse(String src, int firstIndex, int lastIndex) {
-        if (src.length() > (firstIndex) && src.length() >= (lastIndex)&&firstIndex<lastIndex) {
-        String subStrSppace = src.substring(firstIndex, lastIndex);
+        if (src.length() > (firstIndex) && src.length() >= (lastIndex) && firstIndex < lastIndex) {
+            String subStrSppace = src.substring(firstIndex, lastIndex);
 
-        int i = 0,
-                spaceCount = 0;
-        while (i < subStrSppace.length()) {
-            if (subStrSppace.charAt(i) == ' ') {
-                spaceCount++;
+            int i = 0,
+                    spaceCount = 0;
+            while (i < subStrSppace.length()) {
+                if (subStrSppace.charAt(i) == ' ') {
+                    spaceCount++;
+                }
+                i++;
             }
-            i++;
-        }
 
             String subStr = src.substring(firstIndex, lastIndex + spaceCount);
             String wordSub[] = subStr.split(" ");
