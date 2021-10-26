@@ -7,6 +7,7 @@ import java.io.IOException;
 их сумму
 * */
 public class CalculationOfSumNumbers {
+
     public void calculateSumNum(BufferedReader reader) throws IOException {
         String text = reader.readLine();
         char symb [] = text.toCharArray();

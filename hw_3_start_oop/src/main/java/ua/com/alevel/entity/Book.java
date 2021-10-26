@@ -2,7 +2,7 @@ package ua.com.alevel.entity;
 
 import java.util.Objects;
 
-public class Book extends RuntimeException {
+public class Book {
 
     private String id;
     private String name;

@@ -2,7 +2,6 @@ package ua.com.alevel.service;
 
 import ua.com.alevel.array_list.ArrayListMy;
 import ua.com.alevel.dao.BookDao;
-import ua.com.alevel.db.BookDB;
 import ua.com.alevel.entity.Book;
 
 public class BookService {

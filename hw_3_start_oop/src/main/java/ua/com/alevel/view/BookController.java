@@ -9,18 +9,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class BookController {
-    
+
     private final BookService bookService = new BookService();
-    
-    public void run(){
+
+    public void run() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Select your option");
         String position;
         try {
             runNavigation();
-            while ((position=reader.readLine())!=null){
-                crud(position,reader);
-                if (position.equals("0")){
+            while ((position = reader.readLine()) != null) {
+                crud(position, reader);
+                if (position.equals("0")) {
                     System.exit(0);
                 }
             }
@@ -39,13 +39,24 @@ public class BookController {
         System.out.println("if you want exit, please enter 0");
         System.out.println();
     }
+
     private void crud(String position, BufferedReader reader) {
         switch (position) {
-            case "1" : create(reader); break;
-            case "2" : update(reader); break;
-            case "3" : delete(reader); break;
-            case "4" : findById(reader); break;
-            case "5" : findAll(reader); break;
+            case "1":
+                create(reader);
+                break;
+            case "2":
+                update(reader);
+                break;
+            case "3":
+                delete(reader);
+                break;
+            case "4":
+                findById(reader);
+                break;
+            case "5":
+                findAll(reader);
+                break;
         }
         runNavigation();
     }
@@ -61,7 +72,7 @@ public class BookController {
             Book book = new Book();
             book.setPrice(price);
             book.setName(name);
-           bookService.create(book);
+            bookService.create(book);
         } catch (IOException e) {
             System.out.println("problem: = " + e.getMessage());
         }
@@ -114,14 +125,9 @@ public class BookController {
         System.out.println("BookController.findAll");
         ArrayListMy<Book> books = bookService.findAll();
         if (books != null && books.size() != 0) {
-            /*for (Book book : books) {
-                System.out.println("user = " + book);
-            }*/
-            for (int i = 0; i <books.size() ; i++) {
-                System.out.println("book =" +books.get(i));
+            for (int i = 0; i < books.size(); i++) {
+                System.out.println("book =" + books.get(i));
             }
-
-
         } else {
             System.out.println("users empty");
         }
