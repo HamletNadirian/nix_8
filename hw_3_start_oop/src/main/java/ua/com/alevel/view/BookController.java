@@ -1,6 +1,6 @@
 package ua.com.alevel.view;
 
-import ua.com.alevel.array_list.ArrayListMy;
+import ua.com.alevel.arraylist.ArrayListMy;
 import ua.com.alevel.entity.Book;
 import ua.com.alevel.service.BookService;
 
@@ -125,9 +125,14 @@ public class BookController {
         System.out.println("BookController.findAll");
         ArrayListMy<Book> books = bookService.findAll();
         if (books != null && books.size() != 0) {
+            /*for (Book book : books) {
+                System.out.println("user = " + book);
+            }*/
             for (int i = 0; i < books.size(); i++) {
                 System.out.println("book =" + books.get(i));
             }
+
+
         } else {
             System.out.println("users empty");
         }

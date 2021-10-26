@@ -1,4 +1,4 @@
-package ua.com.alevel.count_characters;
+package ua.com.alevel.countcharacters;
 
 import java.io.BufferedReader;
 import java.io.IOException;

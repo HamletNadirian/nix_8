@@ -1,4 +1,4 @@
-package ua.com.alevel.sum_number;
+package ua.com.alevel.sumnumber;
 
 import java.io.BufferedReader;
 import java.io.IOException;

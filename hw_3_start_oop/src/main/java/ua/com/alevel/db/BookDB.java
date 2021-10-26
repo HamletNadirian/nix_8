@@ -1,6 +1,6 @@
 package ua.com.alevel.db;
 
-import ua.com.alevel.array_list.ArrayListMy;
+import ua.com.alevel.arraylist.ArrayListMy;
 import ua.com.alevel.entity.Book;
 
 import java.util.UUID;

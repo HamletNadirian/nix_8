@@ -1,4 +1,4 @@
-package ua.com.alevel.array_list;
+package ua.com.alevel.arraylist;
 
 public class ArrayListMy<T> {
 
