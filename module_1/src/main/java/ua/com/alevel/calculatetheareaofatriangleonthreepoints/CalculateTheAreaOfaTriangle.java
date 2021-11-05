@@ -13,9 +13,6 @@ public class CalculateTheAreaOfaTriangle {
 		double p = (a + b + c) / 2;
 		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
 	}
-
-
-
 	public void inputSide(BufferedReader bufferedReader) {
 		try {
 			System.out.println("Введите сторону A: ");
@@ -24,8 +21,8 @@ public class CalculateTheAreaOfaTriangle {
 			int B = Integer.parseInt(bufferedReader.readLine());
 			System.out.println("Введите сторону C: ");
 			int C = Integer.parseInt(bufferedReader.readLine());
-			double result = calculateTheArea(A,B,C);
-			System.out.println("Площадь треугольника ABC: "+result);
+			double result = calculateTheArea(A, B, C);
+			System.out.println("Площадь треугольника ABC: " + result);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

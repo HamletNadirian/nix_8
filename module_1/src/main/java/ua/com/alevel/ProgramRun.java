@@ -12,7 +12,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ProgramRun {
-	private static void preview() {
+
+		private static void preview() {
 		System.out.println("Для того,чтобы запустить задачу №1 уровня #1#. Вернуть число уникальных символов. Нажмите - 1");
 		System.out.println("Для того,чтобы запустить задачу №2 уровня #1#. Ход коня по бесконечной шахматной доске. Нажмите - 2");
 		System.out.println("Для того,чтобы запустить задачу №3 уровня #1#. Вычислить площадь треугольника ABC. Нажмите - 3");
@@ -70,7 +71,5 @@ public class ProgramRun {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }

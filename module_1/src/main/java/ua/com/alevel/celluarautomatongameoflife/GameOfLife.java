@@ -5,8 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class GameOfLife {
+
 	static int board[][];
-	public  void initLife() throws IOException {
+
+	public void initLife() throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int m = 5;
 		int n = 5;
@@ -22,12 +24,11 @@ public class GameOfLife {
 		System.out.println();
 		System.out.println("Введите количество поколения:");
 		int countNext = Integer.parseInt(reader.readLine());
-		for (int i = 0; i <countNext ; i++) {
+		for (int i = 0; i < countNext; i++) {
 			gameOfLife.next(m, n);
 			gameOfLife.printBoard(m, n);
 			System.out.println();
 		}
-
 	}
 
 	public void printBoard(int m, int n) {
@@ -46,14 +47,11 @@ public class GameOfLife {
 		if (x < 0 || x >= m) {
 			return 0;
 		}
-
 		if (y < 0 || y >= n) {
 			return 0;
 		}
-
 		return board[x][y];
 	}
-
 
 	int alive(int x, int y, int m, int n) {
 		int neighbors = 0;
