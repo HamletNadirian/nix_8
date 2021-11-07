@@ -13,6 +13,7 @@ public class CalculateTheAreaOfaTriangle {
 		double p = (a + b + c) / 2;
 		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
 	}
+
 	public void inputSide(BufferedReader bufferedReader) {
 		try {
 			System.out.println("Введите сторону A: ");

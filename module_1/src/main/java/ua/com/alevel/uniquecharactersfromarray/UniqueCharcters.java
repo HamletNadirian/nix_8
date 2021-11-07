@@ -18,9 +18,7 @@ public class UniqueCharcters {
 
 	public void inputString(BufferedReader reader) throws IOException {
 		System.out.println("Введите символы через пробел:");
-		reader = new BufferedReader(new InputStreamReader(System.in));
-		String str[] = reader.readLine().split(" ");
+		String[] str = reader.readLine().split(" ");
 		System.out.println("Число у никальных символов:" + counterUnique(str));
 	}
-
 }

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class GameOfLife {
 
-	static int board[][];
+	static int[][] board;
 
 	public void initLife() throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

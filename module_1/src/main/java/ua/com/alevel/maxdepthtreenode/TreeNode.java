@@ -1,6 +1,7 @@
 package ua.com.alevel.maxdepthtreenode;
 
 public class TreeNode {
+
 	int val;
 	TreeNode left;
 	TreeNode right;
@@ -12,10 +13,10 @@ public class TreeNode {
 	public TreeNode() {
 	}
 
-	public static int maxDeepth(TreeNode root) {
+	public static int maxDepth(TreeNode root) {
 		if (root == null) return 0;
-		int left = maxDeepth(root.left);
-		int right = maxDeepth(root.right);
+		int left = maxDepth(root.left);
+		int right = maxDepth(root.right);
 		return Math.max(left, right) + 1;
 	}
 	public void initTreeNode() {
@@ -32,7 +33,7 @@ public class TreeNode {
 		treeNode.right.right = new TreeNode(50);
 		treeNode.right.right.right = new TreeNode(60);
 		treeNode.right.right.right.left = new TreeNode(80);
-		System.out.println(maxDeepth(treeNode));
+		System.out.println(maxDepth(treeNode));
 	}
 
 }
