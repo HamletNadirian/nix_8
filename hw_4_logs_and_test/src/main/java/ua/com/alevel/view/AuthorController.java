@@ -100,8 +100,8 @@ public class AuthorController {
 			authorService.create(author);
 
 		} catch (IOException e) {
-			System.out.println("problem: = " + e.getMessage());
-			loggerError.error("problem: = " + e.getMessage());
+			System.out.println("problem: " + e.getMessage());
+			loggerError.error("problem: " + e.getMessage());
 		}
 	}
 
