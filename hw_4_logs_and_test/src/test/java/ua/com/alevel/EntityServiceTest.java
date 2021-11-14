@@ -22,7 +22,7 @@ public class EntityServiceTest {
 
 	@Test
 	@Order(1)
-	public void shouldDoCreateUserWhenNameIsNotEmpty() {
+	public void shouldDoCreateAuthorAndBookWhenNameIsNotEmpty() {
 		author.setName(AUTHOR_NAME);
 		authorService.create(author);
 		book.setPrice(PRICE);
@@ -38,7 +38,7 @@ public class EntityServiceTest {
 
 	@Test
 	@Order(2)
-	public void shouldDoCreateUserWhenNameIsEmpty() {
+	public void shouldDoCreateBookAndAuthorWhenNameIsEmpty() {
 		book.setName(null);
 		book.setPrice(PRICE);
 		author.setName(null);
@@ -56,15 +56,15 @@ public class EntityServiceTest {
 
 	@Test
 	@Order(3)
-	public void shouldDoReturnUserDtoWhenEmailIsEmpty() {
+	public void shouldDoReturnAuthorAndBookDtoWhenNameIsEmpty() {
 		Assertions.assertThrows(
 				RuntimeException.class,
 				() -> authorService.findAuthor(null),
-				"email is not present");
+				"author is not present");
 		Assertions.assertThrows(
 				RuntimeException.class,
 				() -> bookService.findAuthor(null),
-				"email is not present");
+				"book is not present");
 	}
 
 	@Test
