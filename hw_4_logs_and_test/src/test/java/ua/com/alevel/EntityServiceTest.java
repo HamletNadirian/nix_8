@@ -151,6 +151,5 @@ public class EntityServiceTest {
 				"book not found by id " + null);
 
 		Assertions.assertDoesNotThrow(() -> bookService.delete("null"));
-
 	}
 }

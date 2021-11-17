@@ -1,4 +1,5 @@
 package ua.com.alevel;
+
 public class EntityTestHelper {
 
 	public static final String AUTHOR_NAME = "Shildt";
