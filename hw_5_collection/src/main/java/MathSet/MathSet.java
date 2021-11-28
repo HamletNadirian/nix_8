@@ -1,11 +1,8 @@
 package MathSet;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.util.Arrays;
 
-
-public class MathSet<T extends Number> {
+public class MathSet {
 	private Number[] elements;
 	int size;
 	private static final Number[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
@@ -32,14 +29,6 @@ public class MathSet<T extends Number> {
 			for (Number elemTmpArr : tmpArr)
 				ret[indRet++] = elemTmpArr;
 		return ret;
-	}
-
-	private int getSizeWithoutNull(Number[] elements) {
-		int c = 0;
-		for (int i = 0; i < elements.length; i++) {
-			if (this.elements[i] != null) c++;
-		}
-		return c;
 	}
 
 	public MathSet() {
@@ -163,20 +152,6 @@ public class MathSet<T extends Number> {
 		for (int i = 0; i < numbers.length; i++) {
 			add(numbers[i]);
 		}
-	}
-
-	T elements(int index) {
-		return (T) elements[index];
-	}
-
-	public Number[] set(int index, Number[] element) {
-		Number[] oldValue = elements;
-		elements = element;
-		return oldValue;
-	}
-
-	public void setElements(Number[] elements) {
-		this.elements = elements;
 	}
 
 	public void intersection(MathSet ms) {
