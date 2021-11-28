@@ -5,7 +5,7 @@ import MathSet.MathSet;
 public class MathSetTesHelper {
 	public static final Number[] SET_ONE = {1,2,3,4};
 	public static final Number[] SET_ONE_ARRAY_FOR_ADD= {1,2,3,4,5,13,22};
-	public static final Number[] SET_ARRAY_JOIN = {	1,2,3,4,5,6,7,10,22,32,};
+	public static final Number[] SET_ARRAY_JOIN = {	1,2,3,4,5,6,7,10,22,32};
 	public static final Number[] SET_ONE_BY_INDEX = {1,2};
 	public static final Number[] SET_ONE_INTERSECTION = {2,3};
 	public static final MathSet[] MATH_SETS_CLEAR = {};
