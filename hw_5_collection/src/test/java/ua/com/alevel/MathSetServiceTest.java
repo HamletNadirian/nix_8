@@ -19,7 +19,6 @@ public class MathSetServiceTest {
 		Assertions.assertArrayEquals(SET_ONE, mathSetOne.getElements());
 	}
 
-
 	@Test
 	@Order(2)
 	public void shouldDoGetToAddArraysAdd() {
@@ -54,7 +53,6 @@ public class MathSetServiceTest {
 		Assertions.assertArrayEquals(SET_ONE_ARRAY_FOR_ADD, number);
 
 	}
-
 
 	@Test
 	@Order(3)
