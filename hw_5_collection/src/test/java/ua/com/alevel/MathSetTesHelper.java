@@ -11,7 +11,7 @@ public class MathSetTesHelper {
 	public static final MathSet[] MATH_SETS_CLEAR = {};
 	public static final Number[][]SET_ONE_AND_TWO = {{1,2,3,4},{4,5,6,7}} ;
 	public static final Number[] SET_JOIN = {1,2,3,4,5,6,7};
-	public static final Number[] SET_INTERSECTION = {4};
+	public static final Number[] SET_ARRAY_INTERSECTION = {4};
 	public static final Number[] SET_FOR_SORTED_ASC = {1,2,3,4,5,6,7};
 	public static final Number[] SET_FOR_SORTED_DESC = {7,6,5,4,3,2,1};
 	public static final Number[] SET_FOR_SORT_ASC_NUMBER_VALUE = {4,3,1,2,5,6,7};

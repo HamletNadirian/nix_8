@@ -115,7 +115,7 @@ public class MathSetServiceTest {
 		mathSetTwo.add(6);
 		mathSetTwo.add(7);
 		mathSetTwo.intersection(mathSetOne);
-		Assertions.assertArrayEquals(SET_INTERSECTION, mathSetTwo.getElements());
+		Assertions.assertArrayEquals(SET_ARRAY_INTERSECTION, mathSetTwo.getElements());
 	}
 
 	@Test
