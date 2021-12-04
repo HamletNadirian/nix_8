@@ -21,3 +21,5 @@ module_1 = 9
 hw_4 = 8
 
 а где logback.xml - ???
+
+hw_5 = 9
