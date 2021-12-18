@@ -3,7 +3,6 @@ package ua.com.alevel.shortestway;
 import java.io.*;
 import java.util.ArrayDeque;
 import java.util.Arrays;
-
 import static ua.com.alevel.shortestway.Graph.saveShortestDistance;
 
 public class ShortestWay {

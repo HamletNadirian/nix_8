@@ -3,7 +3,6 @@ package ua.com.alevel;
 import ua.com.alevel.correctdateformat.FormatDate;
 import ua.com.alevel.firstuniquename.UniqueName;
 import ua.com.alevel.shortestway.ShortestWay;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
