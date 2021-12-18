@@ -152,5 +152,4 @@ public class ShortestWay {
 		graph2.path();
 		graph2.clean();
 	}
-
 }

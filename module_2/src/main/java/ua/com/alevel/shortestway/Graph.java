@@ -49,7 +49,7 @@ public class Graph {
 		for (int i = 0; i < countOfVertices; i++) {
 			int tempDist = relationMatrix[startTree][i];
 			Path path = new Path(tempDist);
-			path.getParentVertices().add(0);// первым родительским элементом, будет всегда стартовая вершина
+			path.getParentVertices().add(0);
 			shortestPaths.add(path);
 		}
 
@@ -72,7 +72,6 @@ public class Graph {
 
 		displayPaths();
 	}
-
 
 	public void clean() {
 		countOfVertexInTree = 0;
