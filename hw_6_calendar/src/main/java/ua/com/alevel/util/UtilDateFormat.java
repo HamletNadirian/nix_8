@@ -214,8 +214,8 @@ public class UtilDateFormat {
 			if (format == 1) {
 				System.out.println("Enter date in these formats");
 				System.out.println("1/10/34");
-				System.out.println("15/47 00:24:00:000");
-				System.out.println("5/47 00:24:00:000");
+				System.out.println("1/5/47 00:24:00:000");
+				System.out.println("/5/47 00:24:00:000");
 				System.out.println("/2/ :2");
 				System.out.println("/2/ 2");
 				System.out.println("1256 14:59");
@@ -276,8 +276,6 @@ public class UtilDateFormat {
 
 	private static MyCalendar selectDate(String[] dateAndTime, MyCalendar myCalendar) {
 		try {
-
-
 			if (dateAndTime.length == 1) {
 				String date = dateAndTime[0];
 				date = date.replaceAll("^0+(?=.)", "");
@@ -292,7 +290,6 @@ public class UtilDateFormat {
 			} else if (dateAndTime.length == 2) {
 				String date = dateAndTime[0];
 				String time = dateAndTime[1];
-
 				if (testDataFormatAll(date)) {
 					date = date.replaceAll("^0+(?=.)", "");
 					String[] arrDate = date.split("/", 3);
