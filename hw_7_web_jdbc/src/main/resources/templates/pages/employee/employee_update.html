@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Update employee</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mt-2">
+                <div class="card-header">
+                    <h4>description</h4>
+                </div>
+                <div class="card-body">
+                    <form action="#" th:action="@{'/employees/update/' + ${employee.getId()}}" th:object="${employee}"
+                          method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="firstName">firstName</label>
+                            <input type="text" class="form-control" min="1" th:required="required" id="firstName"
+                                   aria-describedby="firstName" placeholder="Enter product price"
+                                   th:field="*{firstName}">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">lastName</label>
+                            <input type="text" class="form-control" min="1" th:required="required" id="lastName"
+                                   aria-describedby="lastName" placeholder="Enter product price" th:field="*{lastName}">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

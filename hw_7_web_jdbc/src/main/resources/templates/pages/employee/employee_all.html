@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/data_table}">
+<head>
+    <meta charset="utf-8">
+    <title>employees</title>
+</head>
+<body>
+
+<div layout:fragment="data_table_content">
+
+    <tr th:each="employee,iter : ${pageData.getItems()}">
+        <td th:text="${iter.count}"></td>
+        <td th:text="${employee.getFirstName()}"></td>
+        <td th:text="${employee.getLastName()}"></td>
+        <td>
+            <a th:href="@{'/departments?employeeId=' + ${employee.getId()}}" th:text="${employee.getDepartmentCount()}"
+               type="button" class="btn btn-link">details</a>
+        </td>
+        <td>
+            <a th:href="@{'/employees/details/' + ${employee.getId()}}" type="button"
+               class="btn btn-primary">details</a>
+        </td>
+        <td>
+            <a th:href="@{'/employees/delete/' + ${employee.getId()}}" type="button" class="btn btn-danger">delete</a>
+        </td>
+        <td>
+            <a th:href="@{'/employees/update/' + ${employee.getId()}}" type="button" class="btn btn-warning">update</a>
+        </td>
+    </tr>
+
+</div>
+
+</body>
+</html>

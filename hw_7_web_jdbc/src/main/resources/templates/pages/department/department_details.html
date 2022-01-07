@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Department details</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-2 mt-2">
+                <div class="card-header">
+                    Department details
+                </div>
+                <div class="card-body">
+                    <table class="table table-hover">
+
+                        <tr>
+                            <th>Id</th>
+                            <td th:text="${department.getId()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Department name</th>
+                            <td th:text="${department.getDepartmentName()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Department employee</th>
+                            <td>
+                                <table>
+                                    <tr th:each="employee : ${employees}">
+                                        <td>
+                                            <a role="button" class="btn btn-link"
+                                               th:href="@{'/employees/details/' + ${employee.getKey()}}"
+                                               th:text="${employee.getValue()}">details</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Budget</th>
+                            <td th:text="${department.getBudget()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Location</th>
+                            <td th:text="${department.getLocation()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Created</th>
+                            <td th:text="${#calendars.format(department.getCreated(),'dd MMMM yyyy')}"></td>
+                        </tr>
+                        <tr>
+                            <th>Updated</th>
+                            <td th:text="${#calendars.format(department.getUpdated(),'dd MMMM yyyy')}"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

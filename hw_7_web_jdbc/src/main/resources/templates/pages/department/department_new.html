@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="utf-8">
+    <title>New Department</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mt-2">
+                <div class="card-header">
+                    <h4>New department</h4>
+                </div>
+                <div class="card-body">
+                    <form action="#" th:action="@{/departments/create}" th:object="${department}" method="post"
+                          enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="departmentName">Department Name name</label>
+                            <input type="text" class="form-control" id="departmentName"
+                                   aria-describedby="departmentName" placeholder="Enter department name"
+                                   th:field="*{departmentName}">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Department page size</label>
+                            <input type="number" class="form-control" id="budget" aria-describedby="budget"
+                                   placeholder="Enter department budget" th:field="*{budget}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Department location</label>
+                            <textarea class="form-control" id="location" placeholder="Enter department location"
+                                      rows="6" th:field="*{location}"/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
