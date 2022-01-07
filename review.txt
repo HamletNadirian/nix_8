@@ -23,3 +23,17 @@ hw_4 = 8
 а где logback.xml - ???
 
 hw_5 = 9
+hw_6 = 9
+
+module_2 = 8
+
+ну вот попробуй что-то поменять в своем входном 3 файлике))
+например в самом начале вмето 4 городов поставь 5)
+
+java.lang.NumberFormatException: For input string: "gdansk warszawa"
+        at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+        at java.base/java.lang.Integer.parseInt(Integer.java:668)
+        at java.base/java.lang.Integer.parseInt(Integer.java:786)
+        at ua.com.alevel.shortestway.ShortestWay.readFile(ShortestWay.java:21)
+        at ua.com.alevel.ProgramRun.menu(ProgramRun.java:36)
+        at ua.com.alevel.ModuleTwoMain.main(ModuleTwoMain.java:5)
