@@ -8,10 +8,10 @@ import org.springframework.context.event.EventListener;
 import ua.com.alevel.config.jpa.DatasourceProperties;
 import ua.com.alevel.config.jpa.JpaConfig;
 
-
 @SpringBootApplication
 @EnableConfigurationProperties(DatasourceProperties.class)
 public class Hw7WebJdbcApplication {
+
     private final JpaConfig jpaConfig;
 
     public Hw7WebJdbcApplication(JpaConfig jpaConfig) {

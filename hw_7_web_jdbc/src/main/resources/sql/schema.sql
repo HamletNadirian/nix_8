@@ -1,4 +1,4 @@
-create table employees
+create table web_jdbc.employees
 (
     id         bigint auto_increment
         primary key,
@@ -9,7 +9,7 @@ create table employees
     last_name  varchar(255) not null
 );
 
-create table departments
+create table web_jdbc.departments
 (
     id              bigint auto_increment
         primary key,
@@ -21,7 +21,7 @@ create table departments
     budget          int          not null
 );
 
-create table employee_department
+create table web_jdbc.employee_department
 (
     employee_id   bigint not null,
     department_id bigint not null,

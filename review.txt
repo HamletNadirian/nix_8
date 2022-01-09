@@ -37,3 +37,11 @@ java.lang.NumberFormatException: For input string: "gdansk warszawa"
         at ua.com.alevel.shortestway.ShortestWay.readFile(ShortestWay.java:21)
         at ua.com.alevel.ProgramRun.menu(ProgramRun.java:36)
         at ua.com.alevel.ModuleTwoMain.main(ModuleTwoMain.java:5)
+
+hw_7 = 8
+
+оч не плохо, но инит бд кто делать будет
+ну и с пагинацией немного недоработал)
+Showing 1 to 0 of 14 entries - что это за 0?)))
+
+я же говорил взять за образец, а не тупо копипастить)
