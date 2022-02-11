@@ -9,7 +9,8 @@ import java.util.Map;
 
 public final class WebRequestUtil {
 
-    private WebRequestUtil() { }
+    private WebRequestUtil() {
+    }
 
     public static final String ORDER_PARAM = "order";
     public static final String SORT_PARAM = "sort";

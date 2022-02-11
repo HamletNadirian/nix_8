@@ -50,12 +50,12 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     @Override
     @Transactional(readOnly = true)
-        public boolean existById(Integer id) {
+    public boolean existById(Integer id) {
         Query query = entityManager
                 .createQuery("select count(department.id) from Department as department " +
                         "where department.id = :id")
                 .setParameter("id", id);
-            return (Long) query.getSingleResult() == 1;
+        return (Long) query.getSingleResult() == 1;
 
     }
 

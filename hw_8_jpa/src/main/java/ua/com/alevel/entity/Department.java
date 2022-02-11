@@ -14,8 +14,6 @@ import java.util.Set;
 @Table(name = "departments")
 public class Department extends BaseEntity {
 
-   /* @Enumerated(EnumType.STRING)
-    private DepartmentName name;*/
     private Integer budget;
     private String location;
     private String name;

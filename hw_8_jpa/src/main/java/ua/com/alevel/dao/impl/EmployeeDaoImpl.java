@@ -26,7 +26,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
         this.entityManager = entityManager;
     }
 
-
     @Override
     @Transactional(isolation = Isolation.READ_COMMITTED, rollbackFor = Exception.class)
     public void create(Employee entity) {
