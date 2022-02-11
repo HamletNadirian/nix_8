@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Courses</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <span th:text="${'New Department'}"></span>
+                </div>
+                <div class="card-body">
+                    <form method="post" th:object="${department}" th:action="@{/departments/new}">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" th:field="*{name}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location" aria-describedby="emailHelp" th:field="*{location}">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Budget $</span>
+                            <input type="text" class="form-control" id="budget" aria-label="Amount (to the nearest dollar)" th:field="*{budget}">
+                            <span class="input-group-text">.00</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <span class="input-group-text" th:text=" ${#calendars.format(#calendars.createNow(), 'dd MMM yyyy HH:mm')}">Time create</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

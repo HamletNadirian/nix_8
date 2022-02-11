@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/data_table_layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Departments</title>
+</head>
+<body>
+<div layout:fragment="data_table_content">
+    <tr th:each="department : ${pageData.getItems()}">
+        <td th:text="${department.getId()}"></td>
+        <td th:text="${department.getName()}"></td>
+        <td th:text="${department.getLocation()}"></td>
+        <td th:text="${department.getBudget()}"></td>
+        <td>
+            <a class="btn btn-link" href="#" role="button" th:href="@{/employees/department/{departmentId}(departmentId=${department.getId()})}" th:text="${department.getCountOfEmployees()}">by department</a>
+        <td>
+            <a class="btn btn-info" href="#" role="button" th:href="@{/departments/details/{id}(id=${department.getId()})}">details</a>
+        </td>
+
+        </td>
+        <td>
+            <a class="btn btn-danger" href="#" role="button" th:href="@{/departments/delete/{id}(id=${department.getId()})}">delete</a>
+        </td>
+    </tr>
+</div>
+</body>
+</html>
