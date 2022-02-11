@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/data_table_layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Departments</title>
+</head>
+<body>
+<div layout:fragment="data_table_content">
+    <tr th:each="employee : ${pageData.getItems()}">
+        <td th:text="${employee.getId()}"></td>
+        <td th:text="${employee.getFirstName()}"></td>
+        <td th:text="${employee.getLastName()}"></td>
+
+        <td>
+            <a class="btn btn-link" href="#" role="button" th:href="@{/departments/employee/{employeeId}(employeeId=${employee.getId()})}" th:text="${employee.getCountOfDepartments()}">by department</a>
+        </td>
+        <td>
+            <a class="btn btn-info" href="#" role="button" th:href="@{/employees/details/{id}(id=${employee.getId()})}">details</a>
+        </td>
+
+        <td>
+            <a class="btn btn-danger" href="#" role="button" th:href="@{/employees/delete/{id}(id=${employee.getId()})}">delete</a>
+        </td>
+    </tr>
+</div>
+</body>
+</html>
