@@ -1,0 +1,58 @@
+*{
+
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    border: rgb(255, 212, 22);
+    border-color: chartreuse;
+    height: 100vh;
+    background-color:aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+width: 550px;
+height: auto;
+padding: 15px;
+background-color: rgb(5, 1, 19);
+border-radius: 10px;
+}
+.email-msg-header
+{
+text-align: center;
+}
+.company-name{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.welcome-text{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.verify-account-btn{
+    padding: 12px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+.copy-right{
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
