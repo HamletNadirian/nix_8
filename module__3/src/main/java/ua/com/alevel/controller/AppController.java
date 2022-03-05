@@ -42,7 +42,6 @@ public class AppController {
         return getDashboardPage;
     }
 
-
     @GetMapping("/transact_history")
     public ModelAndView getTransactHistory(HttpSession httpSession) {
         ModelAndView getTransactHistoryPage = new ModelAndView("transactHistory");
