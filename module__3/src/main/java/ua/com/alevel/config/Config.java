@@ -29,7 +29,6 @@ public class Config extends WebMvcConfigurationSupport {
         return jspViewResolver;
     }
 
-
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new AppInterceptor()).addPathPatterns("/app/*");
