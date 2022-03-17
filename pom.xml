@@ -39,7 +39,7 @@
         <module>hw_6_calendar</module>
         <module>module_2</module>
         <module>hw_7_web_jdbc</module>
-        <module>module_3</module>
+        <module>module__3</module>
     </modules>
 
     <packaging>pom</packaging>
