@@ -1,1 +1,1 @@
-There are tasks of the course Junior Java Developer in NIX Solutions.
+Junior Java Developer Course Tasks&Solutions - NIX Solutions|A-Level.
