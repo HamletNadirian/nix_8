@@ -1,1 +1,0 @@
-INSERT INTO web_jdbc.users (user_id, first_name, last_name, email, password, token, code, verified, verified_at, created_at, updated_at) VALUES (8, 'hamlet', 'nadirian', 'hamlet.nadirian@gmail.com', '$2a$10$cxefYmF/bpHVABB.Yf3gp.Yi0qpkTG6VXQy8mpxlTSCx6enQ/GpaS', null, null, 1, '2022-02-26 14:54:51', null, '2022-02-26 14:54:51');
